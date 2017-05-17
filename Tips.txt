@@ -3,7 +3,14 @@ clear screen: cls
 bypass python ssl error:
 pip install --index-url=http://pypi.python.org/simple/ --trusted-host pypi.python.org  pythonPackage
 
-bypass self signed cert error 
+bypass self signed cert error
 npm
 apm
 git
+
+Use the "Pane: Increase Size" command to grow the pane back to its full size
+Save all your work, exit Atom and then launch Atom again with atom --clear-window-state
+
+To disable SSL verification for that singular repository, assuming it's completely under your control, you can try:
+  cmd in project folder then:
+  git config http.sslVerify false
