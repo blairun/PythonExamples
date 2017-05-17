@@ -1,0 +1,9 @@
+clear screen: cls
+
+bypass python ssl error:
+pip install --index-url=http://pypi.python.org/simple/ --trusted-host pypi.python.org  pythonPackage
+
+bypass self signed cert error 
+npm
+apm
+git
