@@ -2,15 +2,6 @@
 =====
 Decay
 =====
-can you pull this in?
-This example showcases a sinusoidal decay animation.
-this is another description
-can you push this out?
-is this committed locally only or can I see it on github?
-undeleted some description text
-so to add this to pycharm directory with history you would add and commit and
-push, then pull from pycharm
-this is the atom branch
 """
 
 
@@ -53,7 +44,7 @@ def run(data):
         ax.figure.canvas.draw()
     line.set_data(xdata, ydata)
 
-    return lines,
+    return line
 
 ani = animation.FuncAnimation(fig, run, data_gen, blit=False, interval=10,
                               repeat=False, init_func=init)
