@@ -1,9 +1,9 @@
 import sys
-from PyQt5.QtWidgets import QMainWindow, QApplication, QWidget, QLabel, QAction, QTableWidget, QTableWidgetItem, QVBoxLayout, QHBoxLayout, QBoxLayout, QComboBox, QLineEdit, QPushButton
-from PyQt5.QtGui import QIcon, QPixmap
-from PyQt5.QtCore import pyqtSlot
+from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QFormLayout, QComboBox, QLineEdit, QLabel, QHBoxLayout, \
+    QPushButton
 
 qt_app = QApplication(sys.argv)
+
 
 class LayoutExample(QWidget):
     ''' An example of PySide/PyQt absolute positioning; the main window
@@ -37,15 +37,15 @@ class LayoutExample(QWidget):
         self.salutation.addItems(self.salutations)
 
         # Add it to the form layout with a label
-        self.form_layout.addRow('Salutation:', self.salutation)
+        self.form_layout.addRow('&amp;Salutation:', self.salutation)
 
         # Create the entry control to specify a recipient
         # and set its placeholder text
         self.recipient = QLineEdit(self)
-        self.recipient.setPlaceholderText(#'world' or 'Matey'#)
+        self.recipient.setPlaceholderText("e.g.'world' or 'Matey'")
 
         # Add it to the form layout with a label
-        self.form_layout.addRow('Recipient:', self.recipient)
+        self.form_layout.addRow('&amp;Recipient:', self.recipient)
 
         # Create and add the label to show the greeting text
         self.greeting = QLabel('', self)
@@ -80,6 +80,7 @@ class LayoutExample(QWidget):
         self.show()
         # Run the qt application
         qt_app.exec_()
+
 
 # Create an instance of the application window and run it
 app = LayoutExample()
