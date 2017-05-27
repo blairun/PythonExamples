@@ -19,3 +19,7 @@ git
 
 Use the "Pane: Increase Size" command to grow the pane back to its full size
 Save all your work, exit Atom and then launch Atom again with atom --clear-window-state
+
+
+from terminal (not python console):
+pip install pygame
