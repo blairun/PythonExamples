@@ -1,0 +1,12 @@
+clear screen: cls
+cd ..
+dir/ls
+
+bypass python ssl error:
+pip install --index-url=http://pypi.python.org/simple/ --trusted-host pypi.python.org  pythonPackage
+
+from terminal (not python console):
+  pip install pygame
+
+find package location
+  where.exe pypackagename
